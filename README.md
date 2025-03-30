@@ -36,4 +36,19 @@ Design for current mirror ratios of 1:1 or 1:2, then do a DC analysis, Change th
 ## Transient Analysis
 ![Screenshot 2025-03-30 121710](https://github.com/user-attachments/assets/93888de6-f45a-4cf4-9bb1-26f52f375b12)
 ## Current mirror with differential amplifier 
-
+A current mirror circuit combined with a differential amplifier is a typical architecture in analog circuits, particularly in operational amplifiers (op-amps) and analog integrated circuits.  The **current mirror** serves as a **active load** for the differential amplifier, maintaining a constant current through the differential pair while increasing gain and common-mode rejection.  In this configuration, the **differential pair** is made up of two transistors (BJTs or MOSFETs) that receive two input signals each.  The **current mirror** replaces the typical resistor load, giving a constant current source and guaranteeing that the differential pair runs smoothly.  This improves the amplifier's **gain, linearity, and performance**, making it suitable for applications that require high precision, such as sensor interfaces and analog computation.
+## Circuit diagram 
+![Screenshot 2025-03-30 130823](https://github.com/user-attachments/assets/f6756fd8-4072-4d4b-8519-bb47cdd153d3)
+### DC analysis
+![image](https://github.com/user-attachments/assets/de262ddb-afc9-42c8-b20c-0a39c9a80d2c)
+## AC analysis
+![image](https://github.com/user-attachments/assets/cccc131b-8401-4650-945a-f5e382bf49a1)
+## Transient analysis
+![Screenshot 2025-03-30 130804](https://github.com/user-attachments/assets/874065b9-f054-4ca0-a3d1-65b340b85a93)
+## conclusion
+Current mirrors improve circuit stability and efficiency, making them essential for integrated circuits, op-amps, and analog signal processing.
+A current mirror circuit is a fundamental building component in analog design, providing a stable and precise current source that is unaffected by voltage fluctuations.  It guarantees accurate current replication, which is required for biasing, active loads, and differential amplifier circuits.  While an ideal current mirror ensures perfect current matching, practical restrictions like as transistor mismatches, temperature changes, and output resistance cause minor variances.
+## Inference
+The current mirror circuit successfully matches a reference current in another branch, resulting in a stable and exact current source.  
+This experiment indicates that the reflected current is substantially equivalent to the reference current, demonstrating its usefulness for biasing, active loads, and signal amplification.  
+practical issues such as transistor mismatches, temperature changes, and finite output resistance create minor deviations from the ideal performance.
